@@ -1,0 +1,53 @@
+/* flyout.css */
+/* turn off border around image */
+a img {
+   border-style: none;
+}
+.moduletable_clo th{
+padding: 2px;
+text-align:center;
+color:#000; 
+background: #E9E8D3;
+}
+p.closec {
+margin: 8px 0 0 0;
+background: transparent;
+color: #315669;
+font-size: 16px;
+font-weight: bold;
+text-align:left;
+padding: 3px;
+}
+
+.clomenu_flyout {
+border-bottom: 1px #CFCFCF solid;
+background: transparent;
+padding-left:18px; 
+padding-top:5px; 
+padding-bottom:5px; 
+z-index:999;
+font-weight:normal;
+font-size:10px;
+color:#000000;
+/*background-color:#DFE0D0; */
+}
+
+.clomenuh_flyout { background-color:#E9E8D3; }
+a.clomenui_flyout {text-decoration: none; color: #000000; font-size: 11px; }
+
+.clolink  {
+background-image: url(images/menubg.jpg); 
+}
+
+/* must be name convention */
+.clo.flyout {
+background: white;
+border: 1px gray solid;
+padding: 15px;
+z-index:999;
+}
+
+.clolink a {text-decoration: none; color: #000000; font-weight: bold; font-size: 11px; z-index:999;}
+.clolink a:hover {text-decoration: underline; color: #6a6a6a; font-weight: bold; z-index:999;}
+.clolink a:visited {text-decoration: underline; color: #FF0000; font-weight: bold; z-index:999;}
+/* end of css */

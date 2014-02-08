@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="4.5.1">
+<name>MosCmenuTree</name>
+<creationDate>02/26/2009</creationDate>
+<author>Chanh Ong</author>
+<copyright>(C) 2008 OngETC</copyright>
+<license>http:/ongetc.com/gpl.html GNU/GPL</license>
+<authorEmail>ongetc@ongetc.com</authorEmail>
+<authorUrl>ongetc.com</authorUrl>
+<version>1.6.6</version>
+<description><![CDATA[Content Menu Tree, (see readme.txt for more detail), created by Chanh Ong<p />Support COAddOns in making a small donation!<p /><a href="https://www.paypal.com/xclick/business=chanh.ong@gmail.com&item_name=Donation+for+MosCmenuTree&no_shipping=1&tax=0&currency_code=USD" target="_blank"><img src="https://www.paypal.com/en_US/i/btn/x-click-butcc-donate.gif" alt="Pay with PayPal - It's fast, free and save!" border="0"></a>]]></description>
+  <files>
+	<filename module="mod_clo">mod_clo.php</filename>
+	<filename>mod_clo/mod_clo.class.php</filename>
+	<filename>mod_clo/cotoolkit.php</filename>
+	<filename>mod_clo/dtree.js</filename>
+	<filename>mod_clo/dtree.css</filename>
+	<filename>mod_clo/flyout.js</filename>
+	<filename>mod_clo/flyout.css</filename>
+	<filename>mod_clo/jscook.css</filename>
+	<filename>mod_clo/jscookmenu.js</filename>
+	<filename>mod_clo/mosclojquery.js</filename>
+	<filename>mod_clo/list.css</filename>
+	<filename>mod_clo/bycat.css</filename>
+	<filename>mod_clo/bycatj.css</filename>
+	<filename>mod_clo/readme.txt</filename>  
+  </files>
+  <images>
+	<filename>mod_clo/arrow/arrow0.gif</filename>
+	<filename>mod_clo/arrow/arrow1.gif</filename>
+	<filename>mod_clo/arrow/arrow2.gif</filename>
+	<filename>mod_clo/arrow/arrow3.gif</filename>
+	<filename>mod_clo/arrow/arrow4.gif</filename>
+	<filename>mod_clo/arrow/arrow5.gif</filename>
+	<filename>mod_clo/arrow/arrow6.gif</filename>
+	<filename>mod_clo/arrow/arrow7.gif</filename>
+	<filename>mod_clo/arrow/arrow8.gif</filename>
+	<filename>mod_clo/arrow/arrow9.gif</filename>
+	<filename>mod_clo/images/up.gif</filename>
+	<filename>mod_clo/images/down.gif</filename>
+	<filename>mod_clo/images/new.gif</filename>
+	<filename>mod_clo/images/upd.gif</filename>
+  <filename>mod_clo/images/menubg.jpg</filename>
+	<filename>mod_clo/img/base.gif</filename>
+	<filename>mod_clo/img/cd.gif</filename>
+	<filename>mod_clo/img/empty.gif</filename>
+	<filename>mod_clo/img/folder.gif</filename>
+	<filename>mod_clo/img/folderopen.gif</filename>
+	<filename>mod_clo/img/globe.gif</filename>
+	<filename>mod_clo/img/imgfolder.gif</filename>
+	<filename>mod_clo/img/join.gif</filename>
+	<filename>mod_clo/img/joinbottom.gif</filename>
+	<filename>mod_clo/img/line.gif</filename>
+	<filename>mod_clo/img/minus.gif</filename>
+	<filename>mod_clo/img/minusbottom.gif</filename>
+	<filename>mod_clo/img/musicfolder.gif</filename>
+	<filename>mod_clo/img/nolines_minus.gif</filename>
+	<filename>mod_clo/img/nolines_plus.gif</filename>
+	<filename>mod_clo/img/page.gif</filename>
+	<filename>mod_clo/img/plus.gif</filename>
+	<filename>mod_clo/img/plusbottom.gif</filename>
+	<filename>mod_clo/img/question.gif</filename>
+	<filename>mod_clo/img/trash.gif</filename>
+  </images>
+  <params>
+	<param name="encoding" type="text" default="UTF-8" 
+	   label="Language Encoding" description="Language Encoding ex: UTF-8, ISO-8859-1, etc" />  
+	<param name="shownew" type="radio" default="1" 
+		label="Show New" 
+		description="Option to show new or update image on menu item." >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>       
+	<param name="secid" type="text" default="1" 
+	   label="Sect ID" description="Section ID ex: 1,2" />
+	<param name="catid" type="text" default="" 
+	   label="Cat ID" description="Category ID ex: 1,2" />
+	<param name="showCatid" type="radio" default="1" 
+		label="Show Catid" 
+		description="Option to show or hide catid on URL." >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>  
+	<param name="showArrow" type="radio" default="1" 
+		label="Show Arrow" 
+		description="Option to show arrow image on menu item." >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>  
+	<param name="useCSS" type="radio" default="1" 
+		label="Use CSS" 
+		description="Option to use CSS of respective menu type which will use your site default template CSS." >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>  
+	<param name="ltype" type="list" default="dtree" 
+	   label="Menu Type" description="Display content using menu of your chosen">
+		<option value="dtree">dtree</option>
+		<option value="bycat">bycat</option>
+		<option value="bycatj">bycatj</option>
+		<option value="list">list</option>
+		<option value="jscookmenu">jscookmenu</option>
+		<option value="flyout">flyout</option>
+	</param>
+	<param name="secorderby" type="list" default="" 
+	  label="Section Order by" description="Section Order by (Excluding Jcook and dTree)">
+		<option value="">none</option>
+		<option value="id">id</option>
+		<option value="title">title</option>
+		<option value="ordering">ordering</option>
+	</param>
+	<param name="catorderby" type="list" default="id" 
+	  label="Category Order by" description="Category Order by">
+		<option value="id">id</option>
+		<option value="title">title</option>
+		<option value="ordering">ordering</option>
+	</param>
+	<param name="articlesorderby" type="list" default="id" 
+	  label="Articles Order by" description="Articles Order by">
+		<option value="id">id</option>
+		<option value="title">title</option>
+		<option value="ordering">ordering</option>
+	</param>
+	<param name="showupdated" type="text" default="" 
+	   label="Show Updated" description="Show Updated Article Within number of days.  Ex: 14" />
+	<param name="maxlength" type="text" default="" 
+	   label="Max Length" description="Maximum length to show the title ex: 20" />
+	<param name="@spacer" type="spacer" default="ByCatJ Menu Setting" label=">>> [ByCatJ]" description="ByCatJ Menu Setting" />	   
+	<param name="showitem" type="text" default="2" 
+	   label="Show Menu Items" description="Number of Menu Items to show ex: 2" />
+  <param name="@spacer" type="spacer" default="Tree Menu Setting" label=">>> [Tree]" description="Tree Menu Setting" />	   
+	<param name="moduleid" type="text" default="1" 
+	   label="Module ID" description="MosCmenuTree unique ID ex: 1" />
+	<param name="basetext" type="text" default="" 
+		label="Base Text" 
+		description="If Base=text, specify the text to use" />
+	<param name="openAll" type="radio" default="0" 
+		label="Open All" 
+		description="By default a menu tree is shown with all folders closed, except the one of the selected node. With this parameter all folders are open. Overrides closeSameLevel" >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>
+	<param name="useSelection" type="radio" default="1" 
+		label="Use Selection" 
+		description="Nodes can be selected(highlighted)." >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>
+	<param name="useLines" type="radio" default="1" 
+		label="Use Lines" 
+		description="Tree is drawn with lines." >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>
+	<param name="useIcons" type="radio" default="1" 
+		label="Use Icons" 
+		description="Tree is drawn with icons." >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>
+	<param name="useStatusText" type="radio" default="0" 
+		label="Use Status Text" 
+		description="Displays node names in the statusbar instead of the url." >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>
+	<param name="closeSameLevel" type="radio" default="0" 
+		label="Close Same Level" 
+		description="Only one node within a parent can be expanded at the same time." >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>  
+	<param name="@spacer" type="spacer" default="JSCook Menu Setting" label=">>> [JSCook]" description="JSCook Menu Setting" />	   
+	<param name="jscookmenutype" type="list" default="vbr" 
+	   label="JSCook menu Type" description="Display menu orientation">
+		<option value="hbr">hbr</option>
+		<option value="hbl">hbl</option>
+		<option value="hur">hur</option>
+		<option value="hrl">hrl</option>
+		<option value="vbr">vbr</option>
+		<option value="vbl">vbl</option>
+		<option value="vur">vur</option>
+		<option value="vrl">vul</option>
+	</param>
+	<param name="jscookthemefile" type="text" default="%LS%/includes/js/ThemeOffice/theme.js" 
+			label="Theme JS" description="Theme file to use. %LS% = livesite url, %MOD% = module path, %TEM% = template" />
+	<param name="@spacer" type="spacer" default="Debug Setting" label=">>> Debug" description="Debug Setting" />	   
+	<param name="debug" type="radio" default="0" 
+		label="Debug On/Off" 
+		description="Use this to turn debug On/Off" >
+		<option value="1">True</option>
+		<option value="0">False</option>
+	</param>  
+    </params>
+</mosinstall>

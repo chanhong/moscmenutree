@@ -1,0 +1,64 @@
+/* css for list */
+/* turn off border around image */
+a img {
+   border-style: none;
+}
+.moduletable_clo th{
+padding: 2px;
+text-align:center;
+color:#000; 
+background: #E8FFCF;
+}
+.clomodule {
+border: 0px #CFCFCF dotted;
+/*background: #D9EFC2; */
+background: transparent;
+padding-left:2px; 
+padding-right:2px; 
+padding-top:3px; 
+padding-bottom:3px; 
+color:#eee; 
+}
+
+.clomodule th{
+color:#fefefe;
+text-align:center;
+}
+
+p.closec {
+margin: 8px 0 0 0;
+background: transparent;
+color: #315669;
+font-size: 16px;
+font-weight: bold;
+text-align:left;
+padding: 3px;
+}
+
+.clolink {
+padding-top:5px; 
+/*background: #919F81;  */
+background: transparent;
+background-image: url(images/menubg.jpg); 
+}
+
+.clolink a:link,
+.clolink a:active,
+.clolink a:visited {
+text-decoration: none; 
+color: #4F1D1D;  
+font-size: 12px; 
+}
+
+.clolink a:hover {
+text-decoration: underline; 
+font-weight: bold;
+}
+
+.clolink #cloactive {
+font-weight: bold;
+background: #828F74;
+padding:5px;
+}
+
+/* css for list */

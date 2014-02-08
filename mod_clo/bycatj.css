@@ -1,0 +1,60 @@
+/* css for bycatJ */
+/* turn off border around image */
+a img {
+   border-style: none;
+}
+.clolink #cloactive {
+font-weight: bold;
+/*background: #4C8EAF;  */
+background: #CFE0FF;
+}
+
+.clolink  {
+padding: 3px;
+border-left: 1px dotted #315669;
+border-right: 1px dotted #315669;
+border-bottom: 1px dotted #315669;
+background-image: url(images/menubg.jpg); 
+}
+
+.cloviewall {
+background: #CFE0FF; 
+text-align:right;
+}
+
+.clotohide {
+}
+
+p.closec {
+margin: 8px 0 0 0;
+background: transparent;
+color: #315669;
+font-size: 16px;
+font-weight: bold;
+text-align:left;
+padding: 3px;
+}
+
+div.clobycat {
+}
+
+p.clocat {
+background: #315669;
+color: #fff;
+text-align:center;
+margin: 15px 0 0 0;
+padding: 3px;
+}
+
+.clolink a:link,
+.clolink a:active,
+.clolink a:visited {
+text-decoration: none;
+font-size: 12px;
+}
+
+.clolink a:hover {
+text-decoration: underline; 
+}
+
+/* css for bycatj */
